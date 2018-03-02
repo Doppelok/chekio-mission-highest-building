@@ -23,14 +23,20 @@
 <div class="for_info_only">
 <p>
 <strong>Example:</strong>
-
-<pre class="brush: python">checkio([[0, 0, 1, 0],
-         [1, 0, 1, 1],
-         [1, 1, 1, 1],
-         [1, 1, 1, 1]]) == [3, 4] (building №3 is the highest, with height = 4)
-</pre>
-
 </p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">highestBuilding([[0, 0, 1, 0],
+                 [1, 0, 1, 1],
+                 [1, 1, 1, 1],
+                 [1, 1, 1, 1]]) == [3, 4] (building №3 is the highest, with height = 4)
+</pre>
+{% else %}
+<pre class="brush: python">highest_building([[0, 0, 1, 0],
+                  [1, 0, 1, 1],
+                  [1, 1, 1, 1],
+                  [1, 1, 1, 1]]) == [3, 4] (building №3 is the highest, with height = 4)
+</pre>
+{% endif %}
 </div>
 
 <!-- Here you can explain how it can be used in development and what is usage of this. -->
