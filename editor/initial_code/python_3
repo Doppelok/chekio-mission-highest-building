@@ -3,6 +3,14 @@ def highest_building(buildings):
     return 0
 
 if __name__ == '__main__':
+    print("Example:")
+    print(highest_building([
+        [0, 0, 1, 0],
+        [1, 0, 1, 0],
+        [1, 1, 1, 0],
+        [1, 1, 1, 1]
+    ]))
+
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert highest_building([
         [0, 0, 1, 0],
@@ -31,3 +39,4 @@ if __name__ == '__main__':
         [1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1]
     ]) == [4, 6], "Pyramid"
+    print("Coding complete? Click 'Check' to earn cool rewards!")

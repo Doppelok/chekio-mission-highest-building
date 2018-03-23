@@ -9,6 +9,13 @@ function highestBuilding(buildings) {
 
 var assert = require('assert');
 if (!global.is_checking) {
+    console.log('Example:')
+    console.log(highestBuilding([
+        [0, 0, 1, 0],
+        [1, 0, 1, 0],
+        [1, 1, 1, 0],
+        [1, 1, 1, 1]
+    ]))
 
     // These "asserts" are used for self-checking and not for an auto-testing
     assert.equal(highestBuilding([
